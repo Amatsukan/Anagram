@@ -173,6 +173,7 @@ DEPENDENCIES
   magic_encoding
   pg
   rails (= 4.2.0)
+  rake
   rspec
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
