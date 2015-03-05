@@ -1,0 +1,29 @@
+<%= form_for(@anagram) do |f| %>
+<% if @anagram.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@anagram.errors.count, "error") %> prohibited this anagram from being saved:</h2>
+
+	<ul>
+		<% @anagram.errors.full_messages.each do |message| %>
+		<li>
+			<%= message %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div class="field">
+	<%= f.label 'Word 1	' %>
+	<br>
+	<%= f.text_field :w1 %>
+</div>
+<div class="field">
+	<%= f.label 'Word 2' %>
+	<br>
+	<%= f.text_field :w2 %>
+</div>
+<div class="actions">
+	<%= f.submit "is Anagram?"%>
+</div>
+<% end %>

@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Anagrams Detector</h1>
+</ br>
+</ br>
+</ br>
+
+
+<div id="navigation_container">
+ 
+
+ 
+      <div class="rectangle">
+ 
+<!-- the navigation links -->
+ 
+   <ul id="navigation">
+      <li><%= link_to 'Check New Anagram', new_anagram_path %></li>
+   </ul>
+
+   </div>
+ 
+
+<!-- end container -->
+</div>
+
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Word 1</th>
+      <th>Word 2</th>
+      <th>Result</th>
+      <th colspan="30"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @anagrams.each do |anagram| %>
+      <tr>
+        <td><%= anagram.w1 %></td>
+        <td><%= anagram.w2 %></td>
+        <td><%= anagram.result %></td>
+        <td><%= link_to 'Show', anagram %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+<footer>
+	<div class="container">
+		RD test, Anagram detector
+	</div>
+</footer>
+

@@ -1,0 +1,64 @@
+<p id="notice">
+	<%= notice %>
+</p>
+
+<h1>Anagrams Detector</h1>
+</ br>
+</ br>
+</ br>
+
+<div id="navigation_container">
+
+	<div class="rectangle">
+
+		<ul id="navigation">
+			<li>
+				<%= link_to 'Check New Anagram', new_anagram_path %>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
+
+<p>
+	<strong>Word 1:</strong>
+	<%= @anagram.w1 %>
+</p>
+
+<p>
+	<strong>Word 2:</strong>
+	<%= @anagram.w2 %>
+</p>
+
+<p>
+	<strong>Result:</strong>
+	<%= @anagram.result %>
+</p>
+<p>
+	<strong>Request date:</strong>
+	<%= @anagram.created_at %>
+</p>
+
+<div id="navigation_container">
+
+	<div class="rectangle">
+
+		<ul id="navigation">
+
+			<li>
+				<ul id="home">
+					<%= link_to '__Home__', anagrams_path %></ud
+			</li>
+		</ul>
+
+	</div>
+
+</div>
+
+<footer>
+	<div class="container">
+		RD test, Anagram detector
+	</div>
+</footer>
+
