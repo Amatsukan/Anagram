@@ -4,10 +4,9 @@ Anagram checker
 
 * Ruby version
  	ruby 1.9.3
-
-*First 
-	pull this directory.
-	all commands must be executed in this app root folder
+ 	
+pull this directory.
+all commands must be executed in this app root folder
 
 * System dependencies
 	install curl, postgressql, sqlite3, git and ruby.
