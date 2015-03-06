@@ -1,10 +1,12 @@
 # -*- encoding: utf-8 -*-
+# stub: tilt 1.4.1 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "tilt"
   s.version = "1.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Ryan Tomayko"]
   s.date = "2013-05-08"
   s.description = "Generic interface to multiple Ruby template engines"
@@ -14,9 +16,10 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/rtomayko/tilt/"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Tilt", "--main", "Tilt"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "2.4.3"
   s.summary = "Generic interface to multiple Ruby template engines"
+
+  s.installed_by_version = "2.4.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 2

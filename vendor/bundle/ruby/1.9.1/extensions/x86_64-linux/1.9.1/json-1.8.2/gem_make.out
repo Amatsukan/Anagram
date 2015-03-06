@@ -1,0 +1,10 @@
+/home/jake/.rvm/rubies/ruby-1.9.3-p551/bin/ruby -r ./siteconf20150306-26153-1jmdo3k.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+make: Nada a ser feito para `all'.
+
+make  install
+installing default libraries

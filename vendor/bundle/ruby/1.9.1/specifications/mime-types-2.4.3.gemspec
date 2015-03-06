@@ -1,10 +1,12 @@
 # -*- encoding: utf-8 -*-
+# stub: mime-types 2.4.3 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "mime-types"
   s.version = "2.4.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Austin Ziegler"]
   s.cert_chain = ["-----BEGIN CERTIFICATE-----\nMIIDNjCCAh6gAwIBAgIBATANBgkqhkiG9w0BAQUFADBBMQ8wDQYDVQQDDAZhdXN0\naW4xGTAXBgoJkiaJk/IsZAEZFglydWJ5Zm9yZ2UxEzARBgoJkiaJk/IsZAEZFgNv\ncmcwHhcNMTQwMjIyMDM0MTQzWhcNMTUwMjIyMDM0MTQzWjBBMQ8wDQYDVQQDDAZh\ndXN0aW4xGTAXBgoJkiaJk/IsZAEZFglydWJ5Zm9yZ2UxEzARBgoJkiaJk/IsZAEZ\nFgNvcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2mPNf4L37GhKI\nSPCYsvYWXA2/R9u5+pyUnbJ2R1o2CiRq2ZA/AIzY6N3hGnsgoWnh5RzvgTN1Lt08\nDNIrsIG2VDYk/JVt6f9J6zZ8EQHbznWa3cWYoCFaaICdk7jV1n/42hg70jEDYXl9\ngDOl0k6JmyF/rtfFu/OIkFGWeFYIuFHvRuLyUbw66+QDTOzKb3t8o55Ihgy1GVwT\ni6pkDs8LhZWXdOD+921l2Z1NZGZa9KNbJIg6vtgYKU98jQ5qr9iY3ikBAspHrFas\nK6USvGgAg8fCD5YiotBEvCBMYtfqmfrhpdU2p+gvTgeLW1Kaevwqd7ngQmFUrFG1\neUJSURv5AgMBAAGjOTA3MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgSwMB0GA1UdDgQW\nBBQLSSjKemGDapYEd/U4mS1qry2oEjANBgkqhkiG9w0BAQUFAAOCAQEANm2agTdD\n9S2NwXMW0jansInXtQmB44qk/psWujtGnn+oT+a9KXO5p/gx2mmx8hMF02wUBx1H\nk96HUI/jR3HdhYCfG6oJuEzgXrFiSBJw/cOJiM8v3aHsAwI3NeLeIrRwBYB3kI3j\n1qfJXcOWw7c63TrsDX37xj2e4P0DNJ1cTrDmyD2yTQ5776M13Gb6nXjreSeq0t/n\n60Nj91J1oHYk6LFa0eo/gykTbLyaZrsaXlNb3j7CjhUzOpYOhiCUH3s9tKTGXd/+\nLmZ7BxTMsDhZHy3k/ETFhi+7pIUWlFo0imrdyLhd+Jw3boVj3CmvyhcwmpoM0K9l\nAOmrUiElUqLOZA==\n-----END CERTIFICATE-----\n"]
   s.date = "2014-10-21"
@@ -15,10 +17,11 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/halostatue/mime-types/"
   s.licenses = ["MIT", "Artistic 2.0", "GPL-2"]
   s.rdoc_options = ["--main", "README.rdoc"]
-  s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "2.4.3"
   s.summary = "The mime-types library provides a library and registry for information about MIME content type definitions"
+
+  s.installed_by_version = "2.4.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

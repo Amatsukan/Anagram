@@ -1,10 +1,12 @@
 # -*- encoding: utf-8 -*-
+# stub: builder 3.2.2 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "builder"
   s.version = "3.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Jim Weirich"]
   s.date = "2013-06-01"
   s.description = "Builder provides a number of builder objects that make creating structured data\nsimple to do.  Currently the following builder objects are supported:\n\n* XML Markup\n* XML Events\n"
@@ -14,16 +16,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://onestepback.org"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--title", "Builder -- Easy XML Building", "--main", "README.rdoc", "--line-numbers"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "2.4.3"
   s.summary = "Builders for MarkUp."
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 4
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-    else
-    end
-  else
-  end
+  s.installed_by_version = "2.4.3" if s.respond_to? :installed_by_version
 end

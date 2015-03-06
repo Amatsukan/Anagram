@@ -1,0 +1,12 @@
+/home/jake/.rvm/rubies/ruby-1.9.3-p551/bin/ruby -r ./siteconf20150306-26153-1jpq7ps.rb extconf.rb 
+
+make  clean
+make: *** Sem regra para processar o alvo `clean'.  Pare.
+
+make
+echo "Nada."
+Nada.
+
+make  install
+echo "Nada."
+Nada.

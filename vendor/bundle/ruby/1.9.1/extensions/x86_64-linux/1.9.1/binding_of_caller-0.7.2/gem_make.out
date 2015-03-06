@@ -1,0 +1,32 @@
+/home/jake/.rvm/rubies/ruby-1.9.3-p551/bin/ruby -r ./siteconf20150306-26153-cxredb.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling binding_of_caller.c
+binding_of_caller.c: In function ‘binding_free’:
+binding_of_caller.c:40:17: warning: variable ‘bind’ set but not used [-Wunused-but-set-variable]
+   rb_binding_t *bind;
+                 ^
+binding_of_caller.c: At top level:
+binding_of_caller.c:68:3: warning: missing braces around initializer [-Wmissing-braces]
+   binding_mark,
+   ^
+binding_of_caller.c:68:3: warning: (near initialization for ‘binding_data_type.function’) [-Wmissing-braces]
+binding_of_caller.c: In function ‘binding_of_caller’:
+binding_of_caller.c:128:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   rb_control_frame_t *cfp = RUBY_VM_PREVIOUS_CONTROL_FRAME(th->cfp);
+   ^
+binding_of_caller.c:144:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE bindval = binding_alloc(rb_cBinding);
+   ^
+binding_of_caller.c: In function ‘frame_count’:
+binding_of_caller.c:179:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   rb_control_frame_t *cfp = RUBY_VM_PREVIOUS_CONTROL_FRAME(th->cfp);
+   ^
+linking shared-object binding_of_caller.so
+
+make  install
+/usr/bin/install -m 0755 binding_of_caller.so .gem.20150306-26153-1hgo0ml
+installing default binding_of_caller libraries

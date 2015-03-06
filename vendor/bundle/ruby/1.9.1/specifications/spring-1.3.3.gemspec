@@ -1,10 +1,12 @@
 # -*- encoding: utf-8 -*-
+# stub: spring 1.3.3 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "spring"
   s.version = "1.3.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Jon Leighton"]
   s.date = "2015-02-26"
   s.description = "Rails application preloader"
@@ -13,9 +15,10 @@ Gem::Specification.new do |s|
   s.files = ["bin/spring"]
   s.homepage = "http://github.com/rails/spring"
   s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "2.4.3"
   s.summary = "Rails application preloader"
+
+  s.installed_by_version = "2.4.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

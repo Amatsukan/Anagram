@@ -1,10 +1,12 @@
 # -*- encoding: utf-8 -*-
+# stub: loofah 2.0.1 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "loofah"
   s.version = "2.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Mike Dalessio", "Bryan Helmkamp"]
   s.date = "2014-08-21"
   s.description = "Loofah is a general library for manipulating and transforming HTML/XML\ndocuments and fragments. It's built on top of Nokogiri and libxml2, so\nit's fast and has a nice API.\n\nLoofah excels at HTML sanitization (XSS prevention). It includes some\nnice HTML sanitizers, which are based on HTML5lib's whitelist, so it\nmost likely won't make your codes less secure. (These statements have\nnot been evaluated by Netexperts.)\n\nActiveRecord extensions for sanitization are available in the\n`loofah-activerecord` gem (see\nhttps://github.com/flavorjones/loofah-activerecord)."
@@ -14,9 +16,10 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/flavorjones/loofah"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.rdoc"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "2.4.3"
   s.summary = "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments"
+
+  s.installed_by_version = "2.4.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
