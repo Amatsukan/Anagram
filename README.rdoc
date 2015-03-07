@@ -5,48 +5,47 @@ Anagram checker
 * Ruby version
   ruby 1.9.3
   
-pull this directory.
-*
-all commands must be executed in this app root folder
+Pull this directory.
+
+All commands must be executed in this app root folder
 
 * System dependencies
- install curl, postgressql, sqlite3, git and ruby.
- after execute 'bundler install'
+ Install curl, postgressql, sqlite3, git and ruby.
+ After execute 'bundler install'
 
 * Databases
- this app use sqlite3 for test and dev environment, for production he use psql
- if you use production environment in you local machine, DON`t skip "DB configuration" step
- if you use only dev or test environment in your local machine, skip "DB configuration" step
+ This app use sqlite3 for test and dev environment, for production he use psql
+ If you use production environment in you local machine, DON`t skip "DB configuration" step
+ If you use only dev or test environment in your local machine, skip "DB configuration" step
  
 * DB configuration
  
  
 * Configuration
- run 'rake db:create && rake db:migrate' for configure db for this app 
- now run 'rails server'
- done, this app can be used on http://localhost:3000
+ Run 'rake db:create && rake db:migrate' for configure db for this app 
+ Now run 'rails server'
+ Done, this app can be used on http://localhost:3000
  
 * How to run the test suite
- so most easy, only run 'rspec spec' 
+ So most easy, only run 'rspec spec' 
 
 * Deployment instructions(Heroku)
- for deploy this app in Heroku, you must make:
-  -Heroku account in : https://signup.heroku.com/www-header
-  -open terminal, and login in Heroku with 'heroku login' command
-  -open app root folder and run 'heroku create'
-  -now execute 'git push heroku master'
-  -finish run 'heroku run rake db:migrate' for create and configure heroku DB
-  
- for fast open, run 'heroku open'
+ For deploy this app in Heroku, you must make:
+  *Heroku account in : https://signup.heroku.com/www-header
+  *Open terminal, and login in Heroku with 'heroku login' command
+  *Open app root folder and run 'heroku create'
+  *Now execute 'git push heroku master'
+  *Finish run 'heroku run rake db:migrate' for create and configure heroku DB
+ For fast open, run 'heroku open'
   
 * Tutorial for use
- open app(in heroku, local or remote.. whatever)
- first page show all requests for check anagram results. If have one or more, the list with all 'requests' is shown, this list have a link each line for open one especific 'request' details.
- this app have 3 states:
-  -first, is homepage. Show lasts 'requests', from her is possible open "check new anagram page" and specifc 'request' details whith "show" link
-  -check new anagram page, is principal page, in her you can send two strings for check if is anagram or no, after click in 'is anagram?' button, you are redirected for "show page" with your request and result of the operation.
+ Open app(in heroku, local or remote.. whatever)
+ First page show all requests for check anagram results. If have one or more, the list with all 'requests' is shown, this list have a link each line for open one especific 'request' details.
+ This app have 3 states:
+  *First, is homepage. Show lasts 'requests', from her is possible open "check new anagram page" and specifc 'request' details whith "show" link
+  *Check new anagram page, is principal page, in her you can send two strings for check if is anagram or no, after click in 'is anagram?' button, you are redirected for "show page" with your request and result of the operation.
    from this page you can access home again or send new 'request'
-  -show page, is a detail page from one request, contais two sent strings, result is true if anagram or false for not anagram and contains request date.
+  *Show page, is a detail page from one request, contais two sent strings, result is true if anagram or false for not anagram and contains request date.
    from this page you can access "home page" or "check new anagram page"
    
 
